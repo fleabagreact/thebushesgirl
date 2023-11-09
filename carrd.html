@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/b4/e9/77/b4e97788c8b6be00bcdc4fb8f399b8e4.jpg" type="image/x-icon">
+    <title>carrd</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffa047;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: smaller;
+        }
+
+        .tab {
+            width: 500px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(61, 72, 117);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        .close {
+            cursor: pointer;
+        }
+
+        .profile-info {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .profile-image {
+            display: flex;
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        button{
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(61, 72, 117);
+            color:white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover{
+            background-color: white;
+            color:rgb(61, 72, 117);
+        }
+
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hidden-info {
+            display: none;
+        }
+
+        .show-info {
+            display: block;
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            color: rgb(61, 72, 117);
+        }
+        
+        .taste {
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            text-align:left;
+        }
+
+        .icons{
+            display:inline-block;
+            margin-right: 10px;
+        }
+
+        .icons img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        mark{
+            background-color: rgb(255, 205, 185);
+        }
+
+         a{
+            text-decoration:none;
+            color:inherit;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: rgb(85, 88, 170);
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: smaller;
+            }
+        
+            .tab {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .profile-image {
+                display: flex;
+                width: 80px;
+                height: 80px;
+                margin-right: 10px;
+            }
+            
+            .profile-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                border-radius: 50%;
+            }
+
+       
+            .profile-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        
+            .profile-details {
+                text-align: left;
+            }
+        
+            .taste {
+                text-align: left;
+            }
+        }          
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="header">
+            <div>
+                <a href="https://twitter.com/thebushesgirl">twitter</a> │
+                <a href="https://www.instagram.com/lududo_/">instagram</a> │
+                <a href="https://github.com/luizadomato">github</a>
+            </div>
+            <div class="close"><a href="https://www.amazon.com.br/hz/wishlist/ls/PGI9H85DU31D?ref_=wl_share">&#9733;</a></div>
+        </div>
+        <div class="profile-info">
+            <div class="profile-image"><img src="https://64.media.tumblr.com/f8dbeff5df46a87fd9e10ce2b5f625ff/98518ca3b44746ae-14/s400x600/23e542089d834be66993dc2f5fe6d4119832b84b.jpg" alt=""></div>
+            <div class="profile-details">
+                <div>
+                    luiza | ela / delu
+                </div>
+                <div class="toggle-button">pseudocinéfila-leitora, faço uns sites e escrevo poesia ruim sobre o meu ex</div>
+                <div class="hidden-info">
+                    <table>
+                        <tr>
+                            <td><button><a href="https://letterboxd.com/sradasdistopias/">letterboxd</a></button></td>
+                            <td><button><a href="https://open.spotify.com/user/96gjoojhzx0fb2bt5gqesqguy">spotify</a></button></td>
+                            <td><button><a href="https://archiveofourown.org/users/thebushesgirl">ao3</a></button></td>
+                            <td><button><a href="https://www.skoob.com.br/usuario/8178898">skoob</a></button></td>
+                            <td><button><a href="https://www.serializd.com/user/thefolkgirl/profile">serializd</a></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="taste">
+            <div class="toggle-button">｡ ★ •   *    ｡*   ☆ °   *</div>
+            <div class="hidden-info">
+                <p><mark>cantores:</mark> taylor swift, lana del rey, phoebe bridgers</p>
+                <p><mark>escritores:</mark> taylor jenkins reid, sylvia plath, sally rooney, agatha christie, neil gaiman</p>
+                <div class="icons">
+                    <a href="https://letterboxd.com/sradasdistopias/list/luiza-fave-ones/">
+                        <img src="https://i.pinimg.com/564x/9c/5a/4b/9c5a4b6f87a14a1f91a3bcc86d4a913f.jpg" alt="gatinho">
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="https://www.serializd.com/list/95185">
+                        <img src="https://i.pinimg.com/564x/5c/41/7f/5c417f940a1e78bf2a99703c1ab6e1ec.jpg" alt="guitarra">
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="https://www.skoob.com.br/estante/livros/8/8178898/">
+                        <img src="https://i.pinimg.com/564x/dd/7c/33/dd7c33768ab6824a383655d57e4ecd4a.jpg" alt="maçã">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleButtons = document.querySelectorAll('.toggle-button');
+    
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const hiddenInfo = button.nextElementSibling;
+                hiddenInfo.classList.toggle('show-info');
+            });
+        });
+    </script>
+</body>
+</html>
